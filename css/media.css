@@ -142,8 +142,8 @@ justify-content: center;
     }
 
     .address-list {
-        display: flex;
-        margin-left: 300px;
+        background-color: blue;
+        margin: auto;
     }
 
     }
