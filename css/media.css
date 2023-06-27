@@ -118,11 +118,49 @@ justify-content: center;
         border: none;
     }
 
+    .hero {
+        background-color: var(--text-color);
+        width: 100%;
+height: auto;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/Dark-bg-tab-1x.jpg');
+        max-width: 1440px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    
+    }
+
+    @media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/Dark-bg-tab-2x.jpg');
+}
+}
+
+.hero-h {
+    text-align: center;
+font-size: 52px;
+font-weight: 700;
+line-height: 60px;
+letter-spacing: 1.12px;
+margin-top: 112px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 36px;
+width: 496px;
+}
+
 }
 
 @media screen and (min-width: 1158px) {
     .container {
         min-width: 1158px;
+    }
+
+    .header {
+        min-width: 1158px;
+min-height: 72px;
     }
 
     .mob-menu {
@@ -142,8 +180,46 @@ justify-content: center;
     }
 
     .address-list {
-        background-color: blue;
-        margin: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        margin-right: 500px;
+    }
+
+    .address-link {
+        font-size: 16px;
+        
+line-height: 24px;
+letter-spacing: 0.32px;
+        justify-content: center;
+align-items: center;
+    }
+
+    .logo {
+        margin-left: 156px;
+    }
+
+    .hero-h {
+        font-size: 50px;
+font-weight: 700;
+line-height: 60px;
+letter-spacing: 1.12px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 188px;
+margin-bottom: 48px;
+display: flex;
+width: 496px;
+text-align: center;
+    }
+    
+    .hero-btn {
+        margin-bottom: 188px;
+    }
+
+    .address-li {
+        
+        
     }
 
     }
